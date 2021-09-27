@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+# HNreader
 
-You can use the [editor on GitHub](https://github.com/yep/HNreader/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Reader app for [news.ycombinator.com](https://news.ycombinator.com) with a focus on the comments.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<img src="https://is4-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/2b/5f/ca/2b5fcae1-b0dd-c849-420c-b48a790b43ee/9e5d47e4-9517-4101-a010-f4e7aa8f0274_01-Main_1_4F090AF2-7305-461C-8585-43ECD1CB4596.png/1284x2778bb.png" height="400pt" />
 
-### Markdown
+Features:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yep/HNreader/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+ - Supports sections "Top", "New", "Show" and "Ask"
+ - Nested comments: press on a comment to reveal more of the discussion
+ - Preview of the content consisting of main image and first paragraph
+ - Content is shown in reader mode by default but can be opened in Safari
+ - Long press on a comment shows a context menu to open the links mentioned
