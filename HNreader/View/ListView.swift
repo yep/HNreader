@@ -25,7 +25,6 @@ struct ListView: View {
                         ListItemView(id: id)
                     }
                 }
-                ProgressView()
             }
         }
         .onAppear {

@@ -12,38 +12,7 @@ struct CommentContainerView: View {
     var body: some View {
         ScrollView {
             VStack {
-                if let error = viewModel.error {
-                    Text(error)
-                } else {
-                    VStack {
-                        if let title = viewModel.newsItem?.title {
-                            LeftAlignedText(title)
-                            #if os(watchOS)
-                            .font(.title3)
-                            #else
-                            .font(.title)
-                            #endif
-                        }
-                        
-                        if let url = viewModel.newsItem?.url {
-                            HStack() {
-                                #if targetEnvironment(macCatalyst)
-                                Link(url.absoluteString, destination: url)
-                                #else
-                                LinkButton(url: url)
-                                #endif
-                                Spacer()
-                            }
-                        }
-                        
-                        if let text = viewModel.newsItem?.text {
-                            LeftAlignedText(text)
-                        }
-                        
-                        AuthorView(viewModel: viewModel)
-                    }
-                    .padding([.leading, .trailing])
-                }
+                CommentHeaderView(viewModel: viewModel)
 
                 if let kids = viewModel.newsItem?.kids,
                    kids.count > 0
@@ -72,5 +41,3 @@ struct CommentContainerView: View {
     CommentContainerView(id: 1)
     .frame(width: 300, height: 500)
 }
-
-
