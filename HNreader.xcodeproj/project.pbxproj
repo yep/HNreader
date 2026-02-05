@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		012005D52DB7E77F00757911 /* HNreader watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 01CAE7582DB641F3005B504D /* HNreader watchOS.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		012005E22DB7E99500757911 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012005E12DB7E99500757911 /* SafariServices.framework */; };
-		01280A312E8C30CE00664073 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 01280A302E8C30CA00664073 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +82,20 @@
 			);
 			target = 0162681D2DB5657D005A7985 /* HNreader */;
 		};
+		015E417B2F34D574001C8759 /* Exceptions for "HNreader" folder in "HNreader Tests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/HNreader.icon,
+			);
+			target = 0162682B2DB5657F005A7985 /* HNreader Tests */;
+		};
+		015E417C2F34D574001C8759 /* Exceptions for "HNreader" folder in "HNreader UI Tests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/HNreader.icon,
+			);
+			target = 016268352DB5657F005A7985 /* HNreader UI Tests */;
+		};
 		01CAE7872DB642B4005B504D /* Exceptions for "HNreader" folder in "HNreader watchOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -95,6 +108,7 @@
 				Model/ListModel.swift,
 				Model/NewsItemModel.swift,
 				Resources/Assets.xcassets,
+				Resources/HNreader.icon,
 				View/AuthorView.swift,
 				View/CommentContainerView.swift,
 				View/CommentView.swift,
@@ -113,6 +127,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				012005F62DB7FB0D00757911 /* Exceptions for "HNreader" folder in "HNreader" target */,
+				015E417B2F34D574001C8759 /* Exceptions for "HNreader" folder in "HNreader Tests" target */,
+				015E417C2F34D574001C8759 /* Exceptions for "HNreader" folder in "HNreader UI Tests" target */,
 				01CAE7872DB642B4005B504D /* Exceptions for "HNreader" folder in "HNreader watchOS" target */,
 			);
 			path = HNreader;
@@ -372,7 +388,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01280A312E8C30CE00664073 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +558,7 @@
 		016268412DB5657F005A7985 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = HNreader;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HNreader/Resources/HNreader.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,7 +602,7 @@
 		016268422DB5657F005A7985 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = HNreader;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HNreader/Resources/HNreader.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -719,7 +734,7 @@
 		01CAE77C2DB641F4005B504D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = HNreader;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -750,7 +765,7 @@
 		01CAE77D2DB641F4005B504D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = HNreader;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
