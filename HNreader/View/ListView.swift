@@ -14,7 +14,10 @@ struct ListView: View {
                 Button {
                     viewModel.fetchNewsItems(forceReload: true)
                 } label: {
-                    Text("Reload")
+                    HStack {
+                        Image(systemName: "arrow.trianglehead.counterclockwise")
+                        Text("Reload")
+                    }
                 }
                 
                 ForEach(viewModel.newsItemIDs, id: \.self) { id in
@@ -22,6 +25,7 @@ struct ListView: View {
                         ListItemView(id: id)
                     }
                 }
+                ProgressView()
             }
         }
         .onAppear {
