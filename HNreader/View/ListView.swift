@@ -14,10 +14,7 @@ struct ListView: View {
                 Button {
                     viewModel.fetchNewsItems(forceReload: true)
                 } label: {
-                    HStack {
-                        Image(systemName: "arrow.trianglehead.counterclockwise")
-                        Text("Reload")
-                    }
+                    ReloadView()
                 }
                 
                 ForEach(viewModel.newsItemIDs, id: \.self) { id in

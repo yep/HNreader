@@ -86,6 +86,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/HNreader.icon,
+				View/ReloadView.swift,
 			);
 			target = 0162682B2DB5657F005A7985 /* HNreader Tests */;
 		};
@@ -93,6 +94,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/HNreader.icon,
+				View/ReloadView.swift,
 			);
 			target = 016268352DB5657F005A7985 /* HNreader UI Tests */;
 		};
@@ -111,12 +113,15 @@
 				Resources/HNreader.icon,
 				View/AuthorView.swift,
 				View/CommentContainerView.swift,
+				View/CommentHeaderView.swift,
 				View/CommentView.swift,
 				View/LeftAlignedText.swift,
 				View/LinkButton.swift,
 				View/ListItemView.swift,
 				View/ListView.swift,
+				View/ReloadView.swift,
 				View/TabView.swift,
+				View/Untitled.swift,
 			);
 			target = 01CAE7572DB641F3005B504D /* HNreader watchOS */;
 		};

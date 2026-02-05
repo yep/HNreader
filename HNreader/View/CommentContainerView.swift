@@ -25,11 +25,13 @@ struct CommentContainerView: View {
             }
             .padding([.top, .trailing])
             
-            Button("Reload") {
+            Button {
                 viewModel.newsItem = nil
                 viewModel.fetch(id: id)
+            } label: {
+                ReloadView()
             }
-            .padding(.top)
+            .padding()
         }
         .onAppear {
              viewModel.fetch(id: id)
