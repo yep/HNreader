@@ -12,7 +12,7 @@ struct CommentHeaderView: View {
         if let error = viewModel.error {
             Text(error)
         } else {
-            VStack {
+            LazyVStack {
                 if let title = viewModel.newsItem?.title {
                     LeftAlignedText(title)
                     #if os(watchOS)

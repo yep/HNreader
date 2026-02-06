@@ -21,6 +21,7 @@ struct LinkButton: View {
             #endif
         }) {
             Text(url.absoluteString)
+            .lineLimit(nil)
             .multilineTextAlignment(.leading)
             .font(.subheadline)
         }

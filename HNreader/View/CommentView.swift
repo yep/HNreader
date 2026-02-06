@@ -11,7 +11,7 @@ struct CommentView: View {
     @State var expanded = false
     
     var body: some View {
-        VStack {
+        LazyVStack {
             if let error = viewModel.error {
                 Text(error)
             } else if let commentText = viewModel.newsItem?.text,
@@ -33,7 +33,7 @@ struct CommentView: View {
                 }
             }
         }
-        .background(expanded ? Color.primary.opacity(0.03) : Color.clear)
+        .background(expanded ? Color.primary.opacity(0.05) : Color.clear)
         .onAppear {
             viewModel.fetch(id: id)
         }

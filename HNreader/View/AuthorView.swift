@@ -11,6 +11,7 @@ struct AuthorView: View {
     var body: some View {
         HStack {
             Text(viewModel.newsItem?.commentInfoString ?? "")
+                .lineLimit(0)
                 .font(.footnote)
                 .foregroundStyle(.gray)
             Spacer()

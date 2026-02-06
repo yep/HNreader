@@ -11,7 +11,7 @@ struct CommentContainerView: View {
 
     var body: some View {
         ScrollView {
-            VStack {
+            LazyVStack {
                 CommentHeaderView(viewModel: viewModel)
 
                 if let kids = viewModel.newsItem?.kids,
